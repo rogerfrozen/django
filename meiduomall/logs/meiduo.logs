@@ -1,0 +1,47 @@
+WARNING 2019-05-22 21:27:42,824 base 152 Not Found: /
+WARNING 2019-05-22 21:27:42,856 basehttp 124 "GET / HTTP/1.1" 404 2069
+ERROR 2019-05-22 21:27:49,609 exception 135 Internal Server Error: /meiduo
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/Desktop/django/meiduomall/meiduomall/apps/user/views.py", line 16, in get
+    return render(request, 'register.html')
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/python/.virtualenvs/django1.11/local/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: register.html
+ERROR 2019-05-22 21:27:52,023 basehttp 124 "GET /meiduo HTTP/1.1" 500 94320
+INFO 2019-05-22 21:33:30,487 basehttp 124 "GET /meiduo HTTP/1.1" 200 3132
+INFO 2019-05-22 21:33:34,389 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2019-05-22 21:33:34,392 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2019-05-22 21:33:34,393 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2019-05-22 21:33:34,403 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 19365
+INFO 2019-05-22 21:33:34,475 basehttp 124 "GET /static/images/pic_code.jpg HTTP/1.1" 200 4507
+INFO 2019-05-22 21:33:35,278 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2019-05-22 21:33:35,311 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
+INFO 2019-05-22 21:33:35,329 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2019-05-22 21:34:15,050 basehttp 124 "GET /meiduo HTTP/1.1" 200 3615
+INFO 2019-05-22 21:34:15,400 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-05-22 21:34:15,612 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-05-22 21:34:15,780 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2019-05-22 21:34:15,784 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 200 8466
+INFO 2019-05-22 21:34:15,811 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2019-05-22 21:34:15,823 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2019-05-22 21:34:15,824 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2019-05-22 21:34:15,841 basehttp 124 "GET /static/js/login.js HTTP/1.1" 200 1759
+INFO 2019-05-22 21:34:17,894 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-05-22 21:34:17,897 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 200 1816
+INFO 2019-05-22 21:34:17,958 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 200 319312
+WARNING 2019-05-22 21:34:40,891 base 152 Not Found: /register/
+WARNING 2019-05-22 21:34:40,978 basehttp 124 "GET /register/ HTTP/1.1" 404 2114
